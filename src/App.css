@@ -1,0 +1,75 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  color: var(--color);
+}
+
+.elavated,
+fieldset,
+legend {
+  background-color: var(--background-color);
+  box-shadow: rgba(0, 0, 0, 0.212) 1px 1px 5px 1px,
+    inset var(--color) 0 0 1px 0px;
+}
+
+#statFields {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  max-width: min-content;
+  gap: 0.5em;
+}
+label {
+  width: max-content;
+}
+label > input {
+  margin-left: 0.5em;
+}
+fieldset {
+  border: none;
+}
+input[type="number"] {
+  width: 3em;
+}
+legend {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+#totalSLField {
+  font-size: 150%;
+  pointer-events: none;
+}
+
+.rollTable {
+  font-size: 110%;
+}
+.rollTable tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+.D10 {
+  position: relative;
+  display: inline;
+  align-self: baseline;
+  height: 2em;
+  width: 2em;
+}
+.D10 > svg {
+  height: 2em;
+  width: 2em;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.D10 > span {
+  z-index: 1;
+  position: relative;
+}
+
+/* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0BAMAAADP4xsBAAAAMFBMVEUAAAC1JnS6JXWnGGipImzhMpSqIGqnIGxwEEJsEEBwCDh8FEyNGlhtDUCCE1CLGFSSi27nAAAAEHRSTlMAgGAggP9gQIBAIICAYGBADVHiqgAAAh9JREFUeAFiGAWA9uwQtok4CsD4Iy3b7RLAO7yqWH0N/pL29QgkgMGfmcecx8zPnMfg8X5e4TF4Smq+LFsuu35b1uX/83niy3v/XHLF01AURfHibZhg9i7DBMvMdYDnJHe6B8qxs3mgHP81oTvNPTUJcuhJkMNPErMEN8k+h5WEzjOpkXNQ5+agrZyDGjkHdW4OauUc1Mg5aBGHukigVs5BKzkHOQ+en2SeICbB+08k56BWzkErOQfJOaiVc1An5yA5B60nfyyN69wctJFzUGM8eEIS5nCTnOc9NXIO6twctJFzUCPnoM7NQVs5BzVyDlpM/Vga18o5aCXnoPEHz0/CHGoSvv/Tjeewk8xTsJJz0HgONUlKyujR0bMjGL14JqNPU9Id5egvcdPJUY6ep2R1lKObuOnlExldRpfRZfQyJetnMvriCEa3jzn6a0q2jzja3xDoU/E+9ugsFd/iFkMKPsStejkH1HmwqyCo7NBwmQf5GHer7RxQ2TlgsPcOemnvzKP8FaMGOwdcyzmgtvcOKmHvtKP8JP+WgRgBr+0cMNh7B729d5OO8k/c09IODb/lHFArZwhQTcghbuDnmKiXQ8OZnQMG5QwBejkH1PbeQWWHhks5B9R2DqjsHDDYewe9G3rkKH8EmUnWofkp54Da3juo7L2Dv+NfYUKSRcheMYds4BnKennv4E3ufA8PDAwtu2YOV30VRVEURVFM9g+n7XCHAMra+AAAAABJRU5ErkJggg=="); */
