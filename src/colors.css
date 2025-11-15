@@ -1,0 +1,13 @@
+:root {
+  --color: rgb(233, 232, 238);
+  --background-color: #181822;
+  --panel: #2b2b36;
+  --control-color: #343438;
+  --field: #464650;
+  --shadow-dark: rgba(0, 0, 0, 0.212);
+  --shadow-light: rgba(255, 255, 255, 0.137);
+  --primary-700: rgb(90, 90, 180);
+  --primary-500: rgb(35, 35, 130);
+  --primary-200: rgb(35, 35, 90);
+  --outline: rgba(90, 90, 180, 0.178);
+}

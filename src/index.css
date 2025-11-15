@@ -1,12 +1,13 @@
+@import url("./colors.css");
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  --color: rgb(233, 232, 232);
   color: var(--color);
-  --background-color: #242424;
+
   background-color: var(--background-color);
 
   font-synthesis: none;
@@ -32,26 +33,46 @@ body {
   min-height: 100vh;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 table {
   border-collapse: collapse;
 }
 thead {
-  background-color: field;
+  background-color: var(--field);
 }
 td {
   padding: 0.2rem;
 }
 tr {
+}
+
+input {
+  background-color: var(--field);
+}
+
+button,
+input {
+  font-size: 120%;
+  border: none;
+  padding: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 0.1em;
+}
+button,
+input {
+  outline: 1px var(--outline) solid;
+}
+button {
+  margin: 2px;
+  background-color: var(--primary-500);
+}
+button.secondary {
+  background-color: var(--field);
+  outline-width: 2px;
+}
+button:hover {
+  filter: brightness(1.1);
+}
+button:active {
+  filter: brightness(0.9);
 }

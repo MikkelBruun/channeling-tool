@@ -10,9 +10,15 @@
 .elavated,
 fieldset,
 legend {
-  background-color: var(--background-color);
-  box-shadow: rgba(0, 0, 0, 0.212) 1px 1px 5px 1px,
-    inset var(--color) 0 0 1px 0px;
+  background-color: var(--panel);
+}
+.elavated,
+fieldset,
+legend,
+button,
+input {
+  box-shadow: var(--shadow-dark) 2px 2px 5px 0px,
+    inset var(--shadow-dark) 0 0 3px 0px, inset var(--shadow-light) 0 0 2px 0px;
 }
 
 #statFields {
@@ -40,7 +46,6 @@ legend {
   padding-bottom: 0.2em;
 }
 #totalSLField {
-  font-size: 150%;
   pointer-events: none;
 }
 
@@ -57,10 +62,11 @@ legend {
   align-self: baseline;
   height: 2em;
   width: 2em;
+  margin: 0.5em;
 }
 .D10 > svg {
-  height: 2em;
-  width: 2em;
+  height: 1.5em;
+  width: 1.5em;
 
   position: absolute;
   left: 50%;

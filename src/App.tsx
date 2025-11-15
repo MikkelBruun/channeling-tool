@@ -54,7 +54,9 @@ function App() {
   return (
     <main>
       <h1>Channeling calculator</h1>
-      <button onClick={() => localStorage.clear()}>Reset</button>
+      <button className="secondary" onClick={() => localStorage.clear()}>
+        Reset
+      </button>
       <fieldset id="statFields">
         <legend>Stats</legend>
         <label htmlFor="willpower">Willpower</label>
@@ -88,9 +90,16 @@ function App() {
       </fieldset>
       <fieldset id="bonusFields">
         <legend>Bonuses</legend>
-        <button onClick={addBonus}>Add bonus</button>
-        <button onClick={() => console.log(bonuses)}>Debug</button>
+        <button className="secondary" onClick={addBonus}>
+          + Add bonus
+        </button>
         <table>
+          <thead>
+            <tr>
+              <td>Description</td>
+              <td>Bonus SL</td>
+            </tr>
+          </thead>
           <tbody>
             {Object.values(bonuses).map((b) => (
               <tr key={b.id}>
@@ -113,7 +122,12 @@ function App() {
                   />
                 </td>
                 <td>
-                  <button onClick={() => removeBonus(b.id)}>x</button>
+                  <button
+                    className="secondary"
+                    onClick={() => removeBonus(b.id)}
+                  >
+                    x
+                  </button>
                 </td>
               </tr>
             ))}
